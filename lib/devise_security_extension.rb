@@ -86,11 +86,7 @@ Devise.add_module :secure_validatable, :model => 'devise_security_extension/mode
 Devise.add_module :password_archivable, :model => 'devise_security_extension/models/password_archivable'
 Devise.add_module :session_limitable, :model => 'devise_security_extension/models/session_limitable'
 Devise.add_module :expirable, :model => 'devise_security_extension/models/expirable'
-Devise.add_module :security_questionable, :model => 'devise_security_extension/models/security_questionable'
 
 # requires
 require 'devise_security_extension/routes'
 require 'devise_security_extension/rails'
-require 'devise_security_extension/orm/active_record'
-require 'devise_security_extension/models/old_password'
-require 'devise_security_extension/models/security_question'
